@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Custom Components Styles */
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600 transition-colors;
+  }
+
+  .btn-danger {
+    @apply px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition-colors;
+  }
+
+  .input-field {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-gray-700;
+  }
+}
+/* Add this to your globals.css */
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .leaflet-div-icon {
+    background: transparent;
+    border: none;
+  }
+  
+  .leaflet-control-zoom {
+    border: none !important;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2) !important;
+  }
+  
+  .leaflet-popup-content-wrapper {
+    border-radius: 8px;
+    padding: 0;
+  }
+  
+  .leaflet-popup-content {
+    margin: 0;
+  }
+
+  /* Custom scrollbar for events list */
+.overflow-y-auto {
+    scrollbar-width: thin;
+    scrollbar-color: #CBD5E0 #EDF2F7;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+    width: 6px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+    background: #EDF2F7;
+    border-radius: 3px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+    background-color: #CBD5E0;
+    border-radius: 3px;
+}
