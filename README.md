@@ -38,4 +38,4 @@ Technologies Used
 •	React DOM: Package for working with React and the DOM.
 •	Firebase: Platform for building web and mobile applications with features like authentication and real-time databases.
 •	Leaflet: Library for interactive maps.
-![image](https://github.com/user-attachments/assets/b707c5a3-5872-4180-8ad7-81738cd1ed03)
+
