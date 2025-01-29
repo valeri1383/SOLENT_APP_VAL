@@ -23,15 +23,18 @@ Users Login Details
 
 Regular user
 Email - peter.clark@gmail.com
+
 Password – peter123
 
 Email - james.oliver@gmail.com
+
 Password – james123
 
 
 Admin user
 
 Email – valeri@gmail.com
+
 Password – valeri123
 
 
